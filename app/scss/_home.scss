@@ -1,0 +1,1022 @@
+.head__section {
+  padding: 140px 0 100px 0;
+}
+.head__content {
+  display: flex;
+}
+.head__info {
+  min-width: 635px;
+  margin-right: 230px;
+  padding-top: 80px;
+}
+.main__title {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: 'RF Dewi Expanded'; 
+  p {
+    font-family: 'RF Dewi Expanded'; 
+    font-weight: 700;
+    font-size: 100px;
+  }
+}
+.head__subtitle {
+  margin: 30px 0 60px 0;
+  max-width: 465px;
+  color: #878786;
+  line-height: 140%;
+  font-weight: 400;
+  font-size: 16px;
+}
+.head__btns {
+  display: flex;
+  align-items: center;
+}
+.head__imgs {
+  position: relative;
+  width: 419px;
+  height: 547px;
+}
+.head__img {
+  &:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 218.763px;
+    height: 308.194px;
+    border-radius: 109.381px 0px 68px 0px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &:nth-child(2) {
+    position: absolute;
+    top: 9%;
+    right: 7px;
+    width: 170.608px;
+    height: 173.359px;
+    border-radius: 85.304px 85.304px 85.304px 0px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &:nth-child(3) {
+    position: absolute;
+    bottom: 9%;
+    left: 12px;
+    width: 169.232px;
+    height: 171.983px;
+    border-radius: 84.616px 0px 84.616px 84.616px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 218.763px;
+    height: 308.194px;
+    border-radius: 109.381px 0px 68px 0px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+}
+.faq {
+  padding: 100px 0;
+}
+.faq__content {
+  display: flex;
+  justify-content: space-between;
+}
+.faq__title-wrapper {
+  margin-right: 140px;
+}
+.faq__title {
+  margin: 25px 0 70px 0;
+}
+.faq__btn {
+  font-size: 14px;
+  padding: 16px 32px;
+}
+.faq__item {
+  border-radius: 15px;
+  background: #292A2E;
+  padding: 25px;
+  margin-bottom: 25px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.faq__item-plug {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.faq__item-plug.down {
+  & .faq__item-plug-title {
+    color: #121212;
+  }
+  & .faq__item-plug-arrow svg {
+    transition: all 0.5s ease;
+    transform: rotate(180deg);
+    path {
+      fill: $accent;
+    }
+  }
+}
+.faq__item-plug-arrow svg {
+  transition: all 0.5s ease;
+}
+.faq__item-plug-title {
+  color: #FFF;
+  font-family: "RF Dewi Expanded";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 30.8px */
+  max-width: 94%;
+}
+.faq__item-ansver {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.faq__item-ansver .wp-redactor {
+  padding-top: 20px;
+  h1, h2, h3, h4, h5, h6 {
+    color: #121212;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 140%; /* 22.4px */
+    margin-bottom: 20px;
+	}
+	p {
+    color: #121212;
+    font-size: 16px;
+    line-height: 140%; /* 22.4px */
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+	}
+	a {
+		color: #EE9B79;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: auto;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+	}
+	ul, ol {
+		padding: 0;
+		margin: 0 0 15px 0;
+	}
+	ul li, ol li {
+		list-style-position: inside!important;
+		margin: 0 0 10px 0;
+		font-size: 15px;
+    color: rgba(255, 255, 255, 0.80);
+    line-height: 140%; /* 28px */
+	}
+	ul li {
+		list-style: disc;
+    &::marker {
+      color: rgba(238, 155, 121, 1);
+    }
+	}
+	ol li {
+		list-style: decimal;
+	}
+  b {
+    font-weight: 600;
+    color: #fff;
+  }
+}
+.consult {
+  padding: 100px 0;
+}
+.consult__content {
+  border-radius: 20px;
+  background: #FFF;
+  padding: 50px 50px 40px 50px;
+  position: relative;
+  form {
+    display: flex;
+  }
+  .wp-redactor {
+    margin-bottom: 110px;
+    h1, h2, h3, h4, h5, h6 {
+      color: $text;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      margin-bottom: 0;
+    }
+    p {
+      color: $text;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      margin-bottom: 0;
+    }
+    a {
+      color: $text;
+    }
+    ul, ol {
+      padding: 0;
+    }
+    ul li, ol li {
+      list-style-position: inside!important;
+      color: $text;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      margin-bottom: 0;
+    }
+    ul li {
+      list-style: disc;
+    }
+    ol li {
+      list-style: decimal;
+    }
+  }
+}
+.consult__img {
+  width: 276px;
+  height: 358px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 0px 0px 18px 0px;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+.consult__border {
+  display: inline-block;
+  color: $text;
+  font-size: 13px;
+  padding: 12px 15px;
+  border: 1px solid $accent;
+  border-radius: 100px;
+}
+.consult__title {
+  font-family: 'RF Dewi Expanded';
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 58.8px */
+  color: $text;
+  margin: 25px 0 30px 0;
+}
+.consult__form-item {
+  & input {
+    color: rgba(18, 18, 18, 0.50);
+    font-size: 18px;
+    border-radius: 100px;
+    border: 1px solid rgba(18, 18, 18, 0.30);
+    background: rgba(255, 255, 255, 0.04);
+    width: 289px;
+    height: 57px;
+    padding: 0 0 0 25px;
+    margin: 0 30px 0 0;
+    transition: all 0.5s ease;
+  }
+  & input[type='submit'] {
+    border: 2px solid transparent;
+    background: $text;
+    color: #fff;
+    font-weight: 600;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+}
+.about {
+  padding: 100px 0 150px 0;
+}
+.about__title {
+  margin: 25px 0 80px 0;
+}
+.about__wrapper {
+  display: flex;
+}
+.about__imgs {
+  display: flex;
+  margin-right: 48px;
+}
+.about__img {
+  width: 105px;
+  height: 541px;
+  border-radius: 15px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+  &:last-child {
+    width: 424px;
+  }
+  &:nth-child(2) {
+    margin: 0 18px;
+  }
+}
+.about__info {
+  padding-top: 33px;
+  max-width: 574px;
+  .wp-redactor {
+  	h1, h2, h3, h4, h5, h6 {
+      color: rgba(255, 255, 255, 0.80);
+      font-weight: 700;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.80);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      margin-bottom: 35px;
+    }
+    a {
+      color: $accent;
+    }
+    ul, ol {
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+    ul li, ol li {
+      color: rgba(255, 255, 255, 0.80);
+      list-style-position: inside!important;
+      margin: 0 0 10px 0;
+      font-size: 20px;
+    }
+    ul li {
+      list-style: disc;
+    }
+    ol li {
+      list-style: decimal;
+    }
+  }
+}
+.about__btn {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  padding: 13px 26px;
+}
+
+.novo {
+  padding: 100px 0;
+}
+.novo__slider {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60px;
+}
+.swiper-scrollbar {
+  cursor: pointer;
+  width: 100%!important;
+  left: 0!important;
+  border-radius: 100px!important;
+  background: #292A2E!important;
+  height: 20px!important;
+  display: flex!important;
+  align-items: center!important;
+}
+.swiper-scrollbar-drag {
+  border-radius: 100px!important;
+  background: #EE9B79!important;
+  height: 14px!important;
+  margin: 0 0 0 4px!important;
+}
+.novo__slider-item {
+  border-radius: 20px;
+  overflow: hidden;
+}
+.novo__slider-item .novo__item-abs {
+  height: 267px;
+}
+.novo__slider-img {
+  width: 100%;
+  height: 517px;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+
+//catalog goroda
+
+.catalog {
+  padding: 140px 0 100px 0;
+}
+.novo__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 37px 0 70px 0;
+}
+.novo__items {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc(100% + 30px);
+  margin: 0 0 0 -15px;
+}
+.novo__item {
+  width: calc(33.3% - 30px);
+  margin: 0 15px 25px 15px;
+  height: 517px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
+.novo__item-img {
+  width: 100%;
+  height: 517px;
+}
+.novo__item-abs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0px 0px 20px 20px;
+  background: linear-gradient(180deg, rgba(18, 18, 18, 0.00) 0%, rgba(18, 18, 18, 0.60) 99%);
+  width: 100%;
+  height: 200px;
+}
+.novo__item-city {
+  text-transform: uppercase;
+  color: #FFF;
+  text-align: center;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 36px */
+}
+.novo__item-pred {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  margin: 15px 0 30px 0;
+}
+.novo__item-btn {
+  overflow: hidden;
+  height: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+
+//docs 
+
+.docs {
+  padding: 200px 0;
+}
+.docs__title {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.30);
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+
+// 404
+
+.content__404 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.title__404 {
+  color: #FFF;
+  font-family: "RF Dewi Expanded";
+  font-size: 250px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 140%; /* 350px */
+  span {
+    color: #EE9B79;
+  }
+}
+.subtitle__404 {
+  color: #FFF;
+  font-family: "RF Dewi Expanded";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 36.4px */
+  margin-bottom: 90px;
+}
+
+@media only screen and (max-width: 1360px) {
+  .container {
+    max-width: 1200px;
+  }
+  .head__info {
+    margin-right: 146px;
+  }
+  .footer__up-wrapper {
+    margin-right: 0!important;
+  }
+  .footer__nav-wrapper:nth-child(2) {
+    margin: 0 90px!important;
+  }
+}
+@media only screen and (max-width: 1230px) {
+  .container {
+    max-width: 1100px;
+  }
+  .head__info {
+    margin-right: 46px;
+  }
+  .faq__title-wrapper {
+    margin-right: 100px;
+  }
+  .consult__content form {
+    position: relative;
+  }
+  .consult__title {
+    font-size: 40px;
+    position: relative;
+    z-index: 10;
+  }
+}
+@media only screen and (max-width: 1130px) {
+  .container {
+    max-width: 750px;
+  }
+  .sec {
+    padding: 70px 0;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .border {
+    padding: 9px 12px;
+    font-size: 11px;
+  }
+  .catalog {
+    padding: 120px 0 50px 0;
+  }
+  .head__section {
+    padding: 120px 0 70px 0;
+  }
+  .head__content {
+    flex-direction: column-reverse;
+  }
+  .head__info {
+    margin-right: 0;
+    padding-top: 40px;
+  }
+  .head__subtitle {
+    max-width: 100%;
+  }
+  .head__imgs {
+    width: 100%;
+    display: flex;
+    height: auto;
+  }
+  .head__img:nth-child(1) {
+    position: relative;
+    width: 30%;
+    height: 350px;
+    top: 0;
+    left: 0;
+    border-radius: 260px 10px 10px 10px;
+  }
+  .head__img:nth-child(2) {
+    position: relative;
+    width: 30%;
+    height: 350px;
+    top: 0;
+    left: 0;
+    margin: 0 30px;
+    border-radius: 10px 10px 290px 10px;
+  }
+  .head__img:nth-child(3) {
+    position: relative;
+    width: 40%;
+    height: 350px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+  .head__img:nth-child(4) {
+    display: none;
+  }
+  .novo__title-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0 50px 0;
+    & .btn__look {
+      margin: 20px 0 0 0;
+    }
+  }
+  .novo__slider-img {
+    height: 450px;
+  }
+  .novo__item-city {
+    font-size: 30px;
+  }
+  .swiper-scrollbar {
+    height: 15px!important;
+  }
+  .swiper-scrollbar-drag {
+    height: 9px!important;
+  }
+  .novo__slider {
+    padding-bottom: 45px;
+  }
+  .faq__content {
+    flex-direction: column;
+  }
+  .faq__title {
+    margin: 25px 0 50px 0;
+  }
+  .faq__btn {
+    display: none;
+  }
+  .faq__item-plug-title {
+    font-size: 18px;
+  }
+  .novo__item-btn {
+    height: 47px;
+    padding: 12px 33px;
+    margin-bottom: 30px;
+    opacity: 1;
+    font-size: 14px;
+  }
+  .novo__item-pred {
+    margin: 15px 0;
+  }
+  .novo__items {
+    width: calc(100% + 20px);
+    margin: 0 0 0 -10px;
+  }
+  .novo__item {
+    height: 450px;
+    width: calc(50% - 20px);
+    margin: 0 10px 20px 10px;
+  }
+  .consult__content {
+    padding: 35px;
+  }
+  .consult__title {
+    font-size: 26px;
+  }
+  .consult__form-item input {
+    font-size: 16px;
+    width: 213px;
+    margin: 0 21px 0 0;
+  }
+  .consult__content .wp-redactor {
+    margin-bottom: 60px;
+  }
+  .consult__border {
+    font-size: 11px;
+    padding: 9px 12px;
+  }
+  .about {
+    padding: 70px 0 180px 0;
+  }
+  .about__title {
+    margin: 25px 0 50px 0;
+  }
+  .about__wrapper {
+    flex-direction: column-reverse;
+    position: relative;
+  }
+  .about__info {
+    max-width: 100%;
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+  .about__btn {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+  }
+  .about__imgs {
+    margin-right: 0;
+  }
+  .about__img {
+    width: 145px;
+    height: 450px;
+  }
+  .about__info {
+    .wp-redactor {
+      h1, h2, h3, h4, h5, h6 {
+        color: rgba(255, 255, 255, 0.80);
+        font-weight: 700;
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      p {
+        color: rgba(255, 255, 255, 0.80);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 28px */
+        margin-bottom: 30px;
+      }
+      a {
+        color: $accent;
+      }
+      ul, ol {
+        padding: 0;
+        margin: 0 0 20px 0;
+      }
+      ul li, ol li {
+        color: rgba(255, 255, 255, 0.80);
+        list-style-position: inside!important;
+        margin: 0 0 10px 0;
+        font-size: 18px;
+      }
+      ul li {
+        list-style: disc;
+      }
+      ol li {
+        list-style: decimal;
+      }
+    }
+  }
+  .docs {
+    padding: 120px 0 120px 0;
+  }
+  .docs__title {
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .container {
+    max-width: auto;
+    width: 350px;
+  }
+  .docs {
+    padding: 115px 0 80px 0;
+  }
+  .docs__title {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .title__404 {
+    font-size: 130px;
+  }
+  .subtitle__404 {
+    font-size: 22px;
+    margin-bottom: 50px;
+  }
+  .sec {
+    padding: 45px 0;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .head__section {
+    padding: 115px 0 45px 0;
+  }
+  .head__img:nth-child(1) {
+    width: 17%;
+    height: 230px;
+  }
+  .head__img:nth-child(2) {
+    width: 17%;
+    margin: 0 10px;
+    height: 230px;
+  }
+  .head__img:nth-child(3) {
+    width: 66%;
+    height: 230px;
+  }
+  .head__info {
+    min-width: 100% ;
+  }
+  .main__title {
+    font-size: 20px;
+    p {
+      font-size: 40px;
+      margin-top: 5px;
+    }
+  }
+  .head__subtitle {
+    font-size: 14px;
+    margin: 25px 0 50px 0;
+  }
+  .head__btns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .btn__look {
+    margin: 25px 0 0 0;
+  }
+  .main__btn {
+    font-size: 14px;
+    padding: 13px 31px;
+  }
+  .novo__slider {
+    padding-bottom: 32px;
+  }
+  .novo__title-wrapper {
+    margin: 15px 0 30px 0;
+  }
+  .novo__slider-img {
+    height: 425px;
+  }
+  .novo__item-city {
+    font-size: 28px;
+  }
+  .novo__item-pred {
+    font-size: 16px;
+  }
+  .novo__items {
+    width: 100%;
+    margin: 0;
+  }
+  .catalog {
+    padding: 115px 0 35px 0;
+  } 
+  .novo__item {
+    width: 100%;
+    margin: 0 0 15px 0;
+    height: 425px;
+  }
+  .swiper-scrollbar {
+    height: 10px!important;
+  }
+  .swiper-scrollbar-drag {
+    height: 6px !important;
+  }
+  .faq__item {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+  .faq__item-plug-title {
+    font-size: 16px;
+  }
+  .about {
+    padding: 45px 0 150px 0;
+  }
+  .faq__item-ansver .wp-redactor {
+    padding-top: 15px;
+    p {
+      font-size: 14px;
+    }
+    
+  }
+  .consult__content {
+    padding: 30px 25px;
+  }
+  .consult__title {
+    font-size: 22px;
+    margin: 25px 0 20px 0;
+  }
+  .consult__img {
+    display: none;
+  }
+  .consult__content {
+    .wp-redactor {
+      margin-bottom: 35px;
+      h1, h2, h3, h4, h5, h6 {
+        color: $text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 28px */
+        margin-bottom: 0;
+      }
+      p {
+        color: $text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 28px */
+        margin-bottom: 0;
+      }
+      a {
+        color: $text;
+      }
+      ul, ol {
+        padding: 0;
+      }
+      ul li, ol li {
+        list-style-position: inside!important;
+        color: $text;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 28px */
+        margin-bottom: 0;
+      }
+      ul li {
+        list-style: disc;
+      }
+      ol li {
+        list-style: decimal;
+      }
+    }
+  }
+  .consult__content form {
+    flex-direction: column;
+  }
+  .consult__form-item input {
+    width: 100%;
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    padding: 10px 17px;
+    height: 42px;
+  }
+  .consult__form-item input[type=submit] {
+    margin: 10px 0 0 0;
+  }
+  .about__title {
+    margin: 15px 0 25px 0;
+  }
+  .about__info .wp-redactor {
+  	h1, h2, h3, h4, h5, h6 {
+      color: rgba(255, 255, 255, 0.80);
+      font-weight: 700;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+    p {
+      color: rgba(255, 255, 255, 0.80);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 28px */
+      margin-bottom: 25px;
+    }
+    a {
+      color: $accent;
+    }
+    ul, ol {
+      padding: 0;
+      margin: 0 0 20px 0;
+    }
+    ul li, ol li {
+      color: rgba(255, 255, 255, 0.80);
+      list-style-position: inside!important;
+      margin: 0 0 10px 0;
+      font-size: 14px;
+    }
+    ul li {
+      list-style: disc;
+    }
+    ol li {
+      list-style: decimal;
+    }
+  }
+  .about__img {
+    height: 279px;
+  }
+  .about__img:nth-child(2) {
+    margin: 0 10px;
+  }
+  .about__btn {
+    width: 100%;
+    text-align: center;
+    bottom: -85px;
+  }
+}
