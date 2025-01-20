@@ -84,6 +84,10 @@ $(function () {
       el: '.swiper-scrollbar',
       draggable: true
     },
+    navigation: {
+      nextEl: '.gallery-button-next',
+      prevEl: '.gallery-button-prev'
+    },
     breakpoints: {
       750: {
         slidesPerView: 1,
@@ -99,6 +103,40 @@ $(function () {
       },
     }
   });
+
+  if (window.innerWidth <= 1130) {
+    new Swiper('.plan__slider', {
+      slidesPerView: 1,
+      autoHeight: true,
+      loop: true,
+      scrollbar: {
+        el: '.swiper-scrollbar',
+        draggable: true
+      },
+      breakpoints: {
+        750: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          autoHeight: false,
+          loop: true,
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true
+          },
+        },
+        1130: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+          autoHeight: false,
+          loop: true,
+          scrollbar: {
+            el: '.swiper-scrollbar',
+            draggable: true
+          },
+        },
+      }
+    });
+  }
 
 });
 

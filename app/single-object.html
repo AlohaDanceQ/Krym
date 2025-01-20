@@ -40,7 +40,7 @@
           <ul class="header__nav-list">
             <li><a href="#">Главная</a></li>
             <li><a href="catalog_city.html">Каталог</a></li>
-            <li><a href="single-city.html">Ипотека</a></li>
+            <li><a href="#">Ипотека</a></li>
             <li><a href="#">О нас</a></li>
           </ul>
         </nav>
@@ -66,15 +66,21 @@
           </div>
         </div>
         <div class="header__mobile">
-          <nav class="header__nav-mobile">
-            <ul class="header__nav-list">
-              <li><a href="#">Главная</a></li>
-              <li><a href="catalog_city.html">Каталог</a></li>
-              <li><a href="#">Ипотека</a></li>
-              <li><a href="single-object.html">О нас</a></li>
-            </ul>
-          </nav>
-          <a href="#" class="header__btn main__btn">Войти</a>
+          <div class="header__mobile-wrapper">
+            <nav class="header__nav-mobile">
+              <ul class="header__nav-list">
+                <li><a href="#">Главная</a></li>
+                <li><a href="catalog_city.html">Каталог</a></li>
+                <li><a href="#">Ипотека</a></li>
+                <li><a href="#">О нас</a></li>
+              </ul>
+            </nav>
+
+            <div class="header__mobile-btn-wrapper">
+              <a href="tel:+" class="header__phone">+7 (495) 489-67-61</a>
+              <a href="#" class="header__btn main__btn">Войти</a>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -85,6 +91,7 @@
       <section class="object__head">
         <div class="object__content">
           <div class="object__container" style="background-image: url('img/object-bg.png')">
+            <div class="object__gradient"></div>
             <div class="object__wrapper">
               <div class="object__abs">12% скидка</div>
               <div class="object__info">
@@ -108,7 +115,7 @@
                   </div>
                 </div>
               </div>
-              <div class="object__gradient"></div>
+
             </div>
           </div>
           <div class="container">
@@ -237,6 +244,73 @@
               </div>
             </div>
           </div>
+          <div class="swiper-container plan__slider">
+
+            <div class="plan__slider-wrapper swiper-wrapper">
+
+              <div class="plan__slider-item swiper-slide">
+                <div class="plan__item-img"><img src="img/plan-img-2.jpg" alt="img"></div>
+                <div class="plan__item-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="30" r="30" fill="#EE9B79" />
+                    <path
+                      d="M30 22C31.6477 22 33 23.3523 33 25V28H27V25C27 23.3523 28.3523 22 30 22ZM35 28V25C35 22.2477 32.7523 20 30 20C27.2477 20 25 22.2477 25 25V28H24C22.8954 28 22 28.8954 22 30V38C22 39.1046 22.8954 40 24 40H36C37.1046 40 38 39.1046 38 38V30C38 28.8954 37.1046 28 36 28H35ZM24 30H36V38H24V30Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="plan__item-btn-wrapper">
+                  <a href="#" class="plan__item-btn main__btn">Хочу получть планировки</a>
+                </div>
+              </div>
+
+              <div class="plan__slider-item swiper-slide">
+                <div class="plan__item-img"><img src="img/plan-img-1.jpg" alt="img"></div>
+                <div class="plan__item-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="30" r="30" fill="#EE9B79" />
+                    <path
+                      d="M30 22C31.6477 22 33 23.3523 33 25V28H27V25C27 23.3523 28.3523 22 30 22ZM35 28V25C35 22.2477 32.7523 20 30 20C27.2477 20 25 22.2477 25 25V28H24C22.8954 28 22 28.8954 22 30V38C22 39.1046 22.8954 40 24 40H36C37.1046 40 38 39.1046 38 38V30C38 28.8954 37.1046 28 36 28H35ZM24 30H36V38H24V30Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="plan__item-btn-wrapper">
+                  <a href="#" class="plan__item-btn main__btn">Хочу получть планировки</a>
+                </div>
+              </div>
+              <div class="plan__slider-item swiper-slide">
+                <div class="plan__item-img"><img src="img/plan-img-3.jpg" alt="img"></div>
+                <div class="plan__item-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="30" r="30" fill="#EE9B79" />
+                    <path
+                      d="M30 22C31.6477 22 33 23.3523 33 25V28H27V25C27 23.3523 28.3523 22 30 22ZM35 28V25C35 22.2477 32.7523 20 30 20C27.2477 20 25 22.2477 25 25V28H24C22.8954 28 22 28.8954 22 30V38C22 39.1046 22.8954 40 24 40H36C37.1046 40 38 39.1046 38 38V30C38 28.8954 37.1046 28 36 28H35ZM24 30H36V38H24V30Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="plan__item-btn-wrapper">
+                  <a href="#" class="plan__item-btn main__btn">Хочу получть планировки</a>
+                </div>
+              </div>
+              <div class="plan__slider-item swiper-slide">
+                <div class="plan__item-img"><img src="img/plan-img-3.jpg" alt="img"></div>
+                <div class="plan__item-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
+                    <circle cx="30" cy="30" r="30" fill="#EE9B79" />
+                    <path
+                      d="M30 22C31.6477 22 33 23.3523 33 25V28H27V25C27 23.3523 28.3523 22 30 22ZM35 28V25C35 22.2477 32.7523 20 30 20C27.2477 20 25 22.2477 25 25V28H24C22.8954 28 22 28.8954 22 30V38C22 39.1046 22.8954 40 24 40H36C37.1046 40 38 39.1046 38 38V30C38 28.8954 37.1046 28 36 28H35ZM24 30H36V38H24V30Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="plan__item-btn-wrapper">
+                  <a href="#" class="plan__item-btn main__btn">Хочу получть планировки</a>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="swiper-scrollbar"></div>
+
+          </div>
         </div>
       </section>
       <section class="buy sec__small">
@@ -299,21 +373,23 @@
               <div class="gallery-button-wrapper">
                 <div class="gallery-button-next">
                   <svg width="212" height="50" viewBox="0 0 212 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="187" cy="25" r="24.5" stroke="white" stroke-opacity="0.5" />
+                    <circle cx="186.018" cy="25" r="24.5" stroke="white" stroke-opacity="0.5" />
                     <path
-                      d="M192.692 25.7218C193.091 25.3395 193.104 24.7065 192.722 24.3079L186.492 17.812C186.11 17.4134 185.477 17.4002 185.079 17.7824C184.68 18.1647 184.667 18.7977 185.049 19.1963L190.586 24.9704L184.812 30.5076C184.413 30.8898 184.4 31.5228 184.782 31.9215C185.165 32.3201 185.798 32.3333 186.196 31.9511L192.692 25.7218ZM0.979062 21.9998L191.979 25.9998L192.021 24.0002L1.02094 20.0002L0.979062 21.9998Z"
+                      d="M191.75 25.7062C192.14 25.3152 192.139 24.682 191.748 24.292L185.376 17.9361C184.985 17.5461 184.352 17.5469 183.962 17.9379C183.572 18.3289 183.572 18.9621 183.963 19.3521L189.628 25.0018L183.978 30.6658C183.588 31.0569 183.589 31.69 183.98 32.08C184.371 32.4701 185.004 32.4693 185.394 32.0783L191.75 25.7062ZM0.00126761 26.2422L191.043 26L191.04 24L-0.00126761 24.2422L0.00126761 26.2422Z"
                       fill="white" fill-opacity="0.5" />
                   </svg>
+
 
                 </div>
                 <div class="gallery-button-prev">
                   <svg width="212" height="50" viewBox="0 0 212 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="25" cy="25" r="24.5" transform="matrix(-1 0 0 1 50 0)" stroke="white"
+                    <circle cx="25" cy="25" r="24.5" transform="rotate(-180 25 25)" stroke="white"
                       stroke-opacity="0.5" />
                     <path
-                      d="M19.3078 25.7218C18.9092 25.3395 18.896 24.7065 19.2782 24.3079L25.5076 17.812C25.8898 17.4134 26.5228 17.4002 26.9215 17.7824C27.3201 18.1647 27.3333 18.7977 26.9511 19.1963L21.4139 24.9704L27.188 30.5076C27.5866 30.8898 27.5998 31.5228 27.2176 31.9215C26.8353 32.3201 26.2023 32.3333 25.8037 31.9511L19.3078 25.7218ZM211.021 21.9998L20.0209 25.9998L19.9791 24.0002L210.979 20.0002L211.021 21.9998Z"
+                      d="M19.2678 24.2938C18.8778 24.6848 18.8786 25.318 19.2696 25.708L25.6417 32.0639C26.0327 32.4539 26.6658 32.4531 27.0559 32.0621C27.4459 31.6711 27.4451 31.0379 27.0541 30.6479L21.3901 24.9982L27.0397 19.3342C27.4298 18.9431 27.429 18.31 27.038 17.92C26.6469 17.5299 26.0138 17.5307 25.6237 17.9217L19.2678 24.2938ZM211.016 23.7578L19.9746 24L19.9771 26L211.019 25.7578L211.016 23.7578Z"
                       fill="white" fill-opacity="0.5" />
                   </svg>
+
                 </div>
               </div>
               <div class="swiper-scrollbar"></div>
@@ -330,7 +406,7 @@
 
             <div class="novo__slider-wrapper swiper-wrapper">
 
-              <div class="novo__slider-item swiper-slide">
+              <div class="dost__slider-item swiper-slide ">
                 <div class="novo__slider-img"><img src="img/place-img-1.png" alt="img"></div>
                 <div class="novo__item-abs">
                   <h4 class="dost__item-city">ВОРОНЦОВСКИЙ ДВОРЕЦ</h4>
@@ -354,7 +430,7 @@
                 </div>
 
               </div>
-              <div class="novo__slider-item swiper-slide">
+              <div class="dost__slider-item swiper-slide ">
                 <div class="novo__slider-img"><img src="img/place-img-2.png" alt="img"></div>
                 <div class="novo__item-abs">
                   <h4 class="dost__item-city">ЗАПОВЕДНИК КРЫМ</h4>
@@ -372,7 +448,7 @@
 
                 </div>
               </div>
-              <div class="novo__slider-item swiper-slide">
+              <div class="dost__slider-item swiper-slide">
                 <div class="novo__slider-img"><img src="img/place-img-3.png" alt="img"></div>
                 <div class="novo__item-abs">
                   <h4 class="dost__item-city">ЛАСТОЧКИНО ГНЕЗО</h4>
@@ -396,28 +472,28 @@
 
                 </div>
               </div>
-              <div class="novo__slider-item swiper-slide">
+              <div class="dost__slider-item swiper-slide">
                 <div class="novo__slider-img"><img src="img/novo-img-4.jpg" alt="img"></div>
                 <div class="novo__item-abs">
                   <h4 class="novo__item-city">Ялта</h4>
                   <p class="novo__item-pred">предложений: 1240</p>
                 </div>
               </div>
-              <div class="novo__slider-item swiper-slide">
+              <div class="dost__slider-item swiper-slide">
                 <div class="novo__slider-img"><img src="img/novo-img-5.jpg" alt="img"></div>
                 <div class="novo__item-abs">
                   <h4 class="novo__item-city">Ялта</h4>
                   <p class="novo__item-pred">предложений: 1240</p>
                 </div>
               </div>
-              <div class="novo__slider-item swiper-slide">
+              <div class="dost__slider-item swiper-slide">
                 <div class="novo__slider-img"><img src="img/novo-img-6.jpg" alt="img"></div>
                 <div class="novo__item-abs">
                   <h4 class="novo__item-city">Ялта</h4>
                   <p class="novo__item-pred">предложений: 1240</p>
                 </div>
               </div>
-              <div class="novo__slider-item swiper-slide">
+              <div class="dost__slider-item swiper-slide">
                 <div class="novo__slider-img"><img src="img/novo-img-7.jpg" alt="img"></div>
                 <div class="novo__item-abs">
                   <h4 class="novo__item-city">Ялта</h4>
@@ -433,24 +509,26 @@
       </section>
       <section class="consult sec__small">
         <div class="consult__content container">
-          <div class="consult__img"><img src="img/consult-img.png" alt="img"></div>
-          <div class="consult__border">КОНСУЛЬТАЦИЯ</div>
-          <h2 class="consult__title">ХОТИТЕ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ?</h2>
-          <div class="wp-redactor">
-            <p>Заполните контактные данные.</p>
-            <h3>Наши специалисты свяжутся с вами в ближайшее время</h3>
+          <div class="consult-wrapper">
+            <div class="consult__img"><img src="img/consult-img.png" alt="img"></div>
+            <div class="consult__border">КОНСУЛЬТАЦИЯ</div>
+            <h2 class="consult__title">ХОТИТЕ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ?</h2>
+            <div class="wp-redactor">
+              <p>Заполните контактные данные.</p>
+              <h3>Наши специалисты свяжутся с вами в ближайшее время</h3>
+            </div>
+            <form action="#">
+              <div class="consult__form-item">
+                <input type="text" placeholder="Ваше имя">
+              </div>
+              <div class="consult__form-item">
+                <input type="tel" placeholder="Номер телефона">
+              </div>
+              <div class="consult__form-item">
+                <input type="submit" value="Задать вопрос">
+              </div>
+            </form>
           </div>
-          <form action="#">
-            <div class="consult__form-item">
-              <input type="text" placeholder="Ваше имя">
-            </div>
-            <div class="consult__form-item">
-              <input type="tel" placeholder="Номер телефона">
-            </div>
-            <div class="consult__form-item">
-              <input type="submit" value="Задать вопрос">
-            </div>
-          </form>
         </div>
       </section>
 

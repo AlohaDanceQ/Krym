@@ -378,17 +378,13 @@ ul {
     text-decoration: none;
     transition: all 0.5s ease;
   }
-  .novo__item:hover .novo__item-btn {
-    height: 47px;
-    padding: 12px 33px;
-    margin-bottom: 30px;
-    opacity: 1;
+  .novo__item:hover .novo__item-abs {
+    transform: translateY(0);
+    transition: all 0.5s ease;
   }
   
-  .novo__slider-item:hover .novo__item-btn {
-    height: 47px;
-    padding: 13px 33px;
-    margin-bottom: 30px;
-    opacity: 1;
+  .novo__slider-item:hover .novo__item-abs {
+    transform: translateY(0);
+    transition: all 0.5s ease;
   }
 }

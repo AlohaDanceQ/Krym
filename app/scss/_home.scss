@@ -118,20 +118,22 @@
 .faq__item {
   border-radius: 15px;
   background: #292A2E;
-  padding: 25px;
   margin-bottom: 25px;
   &:last-child {
     margin-bottom: 0;
   }
 }
 .faq__item-plug {
+  padding: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 .faq__item-plug.down {
   & .faq__item-plug-title {
+    transition: all 0.5s ease;
     color: #121212;
   }
   & .faq__item-plug-arrow svg {
@@ -161,7 +163,7 @@
   transition: all 0.5s ease;
 }
 .faq__item-ansver .wp-redactor {
-  padding-top: 20px;
+  padding: 0 20px 20px 20px;
   h1, h2, h3, h4, h5, h6 {
     color: #121212;
     font-size: 20px;
@@ -215,9 +217,9 @@
   padding: 100px 0;
 }
 .consult__content {
+  padding: 2px;
+  background: radial-gradient(89.93% 216.99% at 19.37% 17.2%, #E84E0E 0%, #121212 96%);
   border-radius: 20px;
-  background: #FFF;
-  padding: 50px 50px 40px 50px;
   position: relative;
   form {
     display: flex;
@@ -263,12 +265,17 @@
     }
   }
 }
+.consult-wrapper {
+  border-radius: 20px;
+  background: #FFF;
+  padding: 50px 50px 40px 50px;
+}
 .consult__img {
   width: 276px;
   height: 358px;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: 2px;
+  right: 2px;
   border-radius: 0px 0px 18px 0px;
   img {
     width: 100%;
@@ -401,6 +408,7 @@
   overflow: hidden;
   position: relative;
   padding-bottom: 60px;
+  cursor: grab;
 }
 .swiper-scrollbar {
   cursor: pointer;
@@ -483,6 +491,8 @@
   background: linear-gradient(180deg, rgba(18, 18, 18, 0.00) 0%, rgba(18, 18, 18, 0.60) 99%);
   width: 100%;
   height: 200px;
+  transform: translateY(86px);
+  transition: all 0.5s ease;
 }
 .novo__item-city {
   text-transform: uppercase;
@@ -501,10 +511,7 @@
   margin: 15px 0 30px 0;
 }
 .novo__item-btn {
-  overflow: hidden;
-  height: 0;
-  padding: 0;
-  opacity: 0;
+  margin-bottom: 30px;
 }
 
 
@@ -590,27 +597,42 @@
     padding: 70px 0;
   }
   .title {
-    font-size: 32px;
+    font-size: 26px;
   }
   .border {
-    padding: 9px 12px;
-    font-size: 11px;
+    padding: 10px 15px;
   }
   .catalog {
     padding: 120px 0 50px 0;
   }
   .head__section {
-    padding: 120px 0 70px 0;
+    padding: 135px 0 70px 0;
   }
-  .head__content {
-    flex-direction: column-reverse;
+  .main__title {
+    font-size: 24px;
+    p {
+      font-size: 60px;
+    }
   }
   .head__info {
     margin-right: 0;
-    padding-top: 40px;
+    min-width: 445px;
+    max-width: 465px;
+    padding-top: 0;
   }
   .head__subtitle {
     max-width: 100%;
+    font-size: 14px;
+    margin: 30px 0 40px 0;
+  }
+  .head__btn-consult {
+    font-size: 14px;
+  }
+  .btn__look {
+    margin-left: 25px;
+    p {
+      font-size: 11px;
+    }
   }
   .head__imgs {
     width: 100%;
@@ -618,64 +640,71 @@
     height: auto;
   }
   .head__img:nth-child(1) {
-    position: relative;
-    width: 30%;
-    height: 350px;
-    top: 0;
-    left: 0;
-    border-radius: 260px 10px 10px 10px;
+    width: 130px;
+    height: 182px;
+    top: 6px;
+    left: 38px;
   }
   .head__img:nth-child(2) {
-    position: relative;
-    width: 30%;
-    height: 350px;
-    top: 0;
-    left: 0;
-    margin: 0 30px;
-    border-radius: 10px 10px 290px 10px;
+    width: 101px;
+    height: 103px;
+    top: 7%;
+    right: 7px;
   }
   .head__img:nth-child(3) {
-    position: relative;
-    width: 40%;
-    height: 350px;
-    top: 0;
-    left: 0;
-    border-radius: 10px;
+    width: 100px;
+    height: 102px;
+    bottom: 13%;
+    left: 44px;
   }
   .head__img:nth-child(4) {
-    display: none;
+    width: 130px;
+    height: 183px;
+    bottom: 32px;
+    right: 3px;
   }
   .novo__title-wrapper {
-    flex-direction: column;
-    align-items: flex-start;
     margin: 30px 0 50px 0;
     & .btn__look {
-      margin: 20px 0 0 0;
+      align-items: center;
     }
   }
   .novo__slider-img {
-    height: 450px;
+    height: 439px;
   }
   .novo__item-city {
     font-size: 30px;
   }
   .swiper-scrollbar {
-    height: 15px!important;
+    height: 13px!important;
   }
   .swiper-scrollbar-drag {
     height: 9px!important;
   }
   .novo__slider {
-    padding-bottom: 45px;
+    padding-bottom: 33px;
+  }
+  .novo__item-abs {
+    transform: translateY(0);
   }
   .faq__content {
     flex-direction: column;
   }
+  .faq__title-wrapper {
+    margin-right: 0;
+    position: relative;
+  }
   .faq__title {
     margin: 25px 0 50px 0;
   }
+  .faq__title-btn {
+    position: absolute;
+    right: 0;
+    top: 63px;
+  }
   .faq__btn {
-    display: none;
+    padding: 10px 20px;
+    font-size: 12px;
   }
   .faq__item-plug-title {
     font-size: 18px;
@@ -699,7 +728,7 @@
     width: calc(50% - 20px);
     margin: 0 10px 20px 10px;
   }
-  .consult__content {
+  .consult-wrapper {
     padding: 35px;
   }
   .consult__title {
@@ -714,14 +743,13 @@
     margin-bottom: 60px;
   }
   .consult__border {
-    font-size: 11px;
-    padding: 9px 12px;
+    padding: 10px 15px;
   }
   .about {
     padding: 70px 0 180px 0;
   }
   .about__title {
-    margin: 25px 0 50px 0;
+    margin: 25px 0 25px 0;
   }
   .about__wrapper {
     flex-direction: column-reverse;
@@ -741,24 +769,30 @@
     margin-right: 0;
   }
   .about__img {
-    width: 145px;
-    height: 450px;
+    width: 121px;
+    height: 323px;
+    &:nth-child(2) {
+      margin: 0 10px;
+    }
+    &:last-child {
+      width: 486px;
+    }
   }
   .about__info {
     .wp-redactor {
       h1, h2, h3, h4, h5, h6 {
         color: rgba(255, 255, 255, 0.80);
         font-weight: 700;
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 20px;
       }
       p {
         color: rgba(255, 255, 255, 0.80);
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 400;
         line-height: 140%; /* 28px */
-        margin-bottom: 30px;
+        margin-bottom: 25px;
       }
       a {
         color: $accent;
@@ -771,7 +805,7 @@
         color: rgba(255, 255, 255, 0.80);
         list-style-position: inside!important;
         margin: 0 0 10px 0;
-        font-size: 18px;
+        font-size: 16px;
       }
       ul li {
         list-style: disc;
@@ -793,6 +827,10 @@
   .container {
     max-width: auto;
     width: 350px;
+  }
+  .border {
+    font-size: 12px;
+    padding: 7px 10px;
   }
   .docs {
     padding: 115px 0 80px 0;
@@ -817,18 +855,42 @@
   .head__section {
     padding: 115px 0 45px 0;
   }
+  .head__content {
+    flex-direction: column-reverse;
+  }
+  .head__imgs {
+    width: 100%;
+    display: flex;
+    height: auto;
+    margin-bottom: 40px;
+  }
   .head__img:nth-child(1) {
+    position: relative;
     width: 17%;
     height: 230px;
+    top: 0;
+    left: 0;
+    border-radius: 260px 10px 10px 10px;
   }
   .head__img:nth-child(2) {
+    position: relative;
     width: 17%;
     margin: 0 10px;
     height: 230px;
+    top: 0;
+    left: 0;
+    border-radius: 10px 10px 290px 10px;
   }
   .head__img:nth-child(3) {
+    position: relative;
     width: 66%;
     height: 230px;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+  }
+  .head__img:nth-child(4) {
+    display: none;
   }
   .head__info {
     min-width: 100% ;
@@ -850,6 +912,7 @@
   }
   .btn__look {
     margin: 25px 0 0 0;
+    align-items: center;
   }
   .main__btn {
     font-size: 14px;
@@ -860,6 +923,9 @@
   }
   .novo__title-wrapper {
     margin: 15px 0 30px 0;
+  }
+  .novo__title-wrapper .btn__look {
+    display: none;
   }
   .novo__slider-img {
     height: 425px;
@@ -889,24 +955,29 @@
     height: 6px !important;
   }
   .faq__item {
-    padding: 15px;
     margin-bottom: 20px;
+  }
+  .faq__item-plug {
+    padding: 15px;
   }
   .faq__item-plug-title {
     font-size: 16px;
+  }
+  .faq__title-btn {
+    display: none;
   }
   .about {
     padding: 45px 0 150px 0;
   }
   .faq__item-ansver .wp-redactor {
-    padding-top: 15px;
+    padding: 0 15px 15px 15px;
     p {
       font-size: 14px;
     }
     
   }
-  .consult__content {
-    padding: 30px 25px;
+  .consult-wrapper {
+    padding: 28px 23px;
   }
   .consult__title {
     font-size: 22px;
