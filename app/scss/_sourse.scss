@@ -316,11 +316,11 @@ ul {
     background: transparent;
     color: #fff;
   }
-  .consult__form-item input:hover, .consult__form-item input:focus {
+  .consult__form-item input:hover, .consult__form-item input:focus, .callback__form-item input:hover, .callback__form-item input:focus {
     border: 1px solid $accent;
     transition: all 0.5s ease;
   }
-  .consult__form-item input[type=submit]:hover {
+  .consult__form-item input[type=submit]:hover, .callback__form-item input[type=submit]:hover {
     border: 2px solid $accent;
     background: transparent;
     color: #121212;

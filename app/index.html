@@ -31,6 +31,20 @@
 
   <div class="app">
 
+    <div class="preloader-conteiner">
+      <div class="preloader">
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+        <!-- <img src="img/gif/preloader.gif" alt="" class="preloader-img"> -->
+      </div>
+    </div>
+
     <header class="header">
       <div class="header__content container">
         <div class="header__logo-wrapper">
@@ -97,7 +111,8 @@
               продажи недвижимости, а также комплекс сопутствующих сервисов: подбор недвижимости, полное ипотечное
             </h3>
             <div class="head__btns">
-              <a href="#" class="head__btn-consult main__btn">Получить консультацию</a>
+              <button class="head__btn-consult main__btn air-open-btn" data-popup-current="callback_form">Получить
+                консультацию</button>
               <a href="#" class="head__btn-look btn__look">
                 <div class="head__btn-look-arrow btn__look-arrow">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -208,7 +223,7 @@
             <div class="faq__border border">Faq</div>
             <h3 class="faq__title title">ЧАСТЫЕ ВОПРОСЫ</h3>
             <div class="faq__title-btn">
-              <a href="#" class="faq__btn main__btn">Задать вопрос</a>
+              <button class="faq__btn main__btn air-open-btn" data-popup-current="callback_form">Задать вопрос</button>
             </div>
           </div>
           <div class="faq__items">
@@ -502,6 +517,39 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup__form-body popup-air" data-air="callback_form">
+      <div class="popup__form">
+
+        <div class="popup__form-wrapper">
+          <h3 class="popup__form-title">ХОТИТЕ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ?</h3>
+          <p class="popup__form-subtitle">Заполните контактные данные. <br> Наши специалисты свяжутся с вами в ближайшее
+            время</p>
+          <div class="callback__form-item">
+            <input type="text" placeholder="Ваше имя">
+          </div>
+          <div class="callback__form-item">
+            <input type="tel" placeholder="Номер телефона">
+          </div>
+
+          <div class="callback__form-item sub">
+            <input type="submit" value="Задать вопрос">
+          </div>
+          <div class="popup__form-img"><img src="img/consult-img.png" alt="img"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="popup__form-body popup-air" data-air="send__form">
+    <div class="popup__form">
+      <div class="popup__form-send">
+        <h3 class="form-send-title">Заявка отправлена</h3>
+        <p class="form-send-subtitle">Скоро свяжемся</p>
+      </div>
+    </div>
+  </div>
 
   </div>
 

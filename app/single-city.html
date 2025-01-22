@@ -24,12 +24,27 @@
 
   <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
 </head>
 
 <body>
 
   <div class="app">
+
+    <div class="preloader-conteiner">
+      <div class="preloader">
+        <div class="sk-chase">
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+          <div class="sk-chase-dot"></div>
+        </div>
+        <!-- <img src="img/gif/preloader.gif" alt="" class="preloader-img"> -->
+      </div>
+    </div>
 
     <header class="header">
       <div class="header__content container">
@@ -91,7 +106,8 @@
         <div class="single__content container">
           <div class="single__title-wrapper">
             <h3 class="single__title">НОВОСТРОЙКИ В ЯЛТЕ</h3>
-            <a href="#" class="single__btn main__btn">Получить консультацию</a>
+            <button class="single__btn main__btn air-open-btn" data-popup-current="callback_form">Получить
+              консультацию</button>
           </div>
           <h4 class="single__subtitle">Актуальный каталог недвижимости по выбранному городу</h4>
           <div class="single__imgs">
@@ -133,6 +149,59 @@
       <section class="complecs">
         <div class="complecs__content container">
           <h3 class="complecs__title-main title">СПИСОК НЕДВИЖИМОСТИ</h3>
+
+          <div class="range__wrapper">
+
+            <div class="range__content">
+              <div class="range__title-wrapper">
+                <p class="range__title">Фильтр недвижимости</p>
+                <div class="range__title-svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                    <g clip-path="url(#clip0_136_746)">
+                      <path
+                        d="M6.38584 9.1132L11.8402 3.65865C12.0533 3.44567 12.0533 3.10029 11.8402 2.88727C11.6272 2.67429 11.2818 2.67429 11.0688 2.88731L6.0001 7.95614L0.931114 2.88727C0.718096 2.67429 0.372751 2.67429 0.159733 2.88731C0.0532236 2.99378 -1.33514e-05 3.13338 -1.33514e-05 3.27298C-1.33514e-05 3.41258 0.0532236 3.55218 0.159769 3.65869L5.61446 9.1132C5.71675 9.21553 5.85548 9.27298 6.00013 9.27298C6.14479 9.27298 6.28355 9.21553 6.38584 9.1132Z"
+                        fill="white" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_136_746">
+                        <rect width="12" height="12" fill="white" transform="matrix(0 1 -1 0 12 0)" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div class="range__items">
+
+                <div class="range__item">
+                  <p class="range__item-info">
+                    <label for="plosha">Площадь квартиры</label>
+                    <input type="text" id="plosha" readonly>
+                  </p>
+                  <div id="slider-range-plosha"></div>
+                </div>
+                <div class="range__item">
+                  <p class="range__item-info">
+                    <label for="amount">Стоимость жилья млн.</label>
+                    <input type="text" id="amount" readonly>
+                  </p>
+                  <div id="slider-range-price"></div>
+                </div>
+                <div class="range__room">
+                  <p class="range__room-title">Количество комнат</p>
+                  <div class="range__room-row">
+                    <p class="range__room-item">C</p>
+                    <p class="range__room-item active">1</p>
+                    <p class="range__room-item">2</p>
+                    <p class="range__room-item">3</p>
+                    <p class="range__room-item">4</p>
+                    <p class="range__room-item">5+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
           <div class="complecs__items">
             <div class="complecs__item">
 
@@ -607,10 +676,45 @@
       </div>
     </footer>
 
+    <div class="popup__form-body popup-air" data-air="callback_form">
+      <div class="popup__form">
+
+        <div class="popup__form-wrapper">
+          <h3 class="popup__form-title">ХОТИТЕ ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ?</h3>
+          <p class="popup__form-subtitle">Заполните контактные данные. <br> Наши специалисты свяжутся с вами в ближайшее
+            время</p>
+          <div class="callback__form-item">
+            <input type="text" placeholder="Ваше имя">
+          </div>
+          <div class="callback__form-item">
+            <input type="tel" placeholder="Номер телефона">
+          </div>
+
+          <div class="callback__form-item sub">
+            <input type="submit" value="Задать вопрос">
+          </div>
+          <div class="popup__form-img"><img src="img/consult-img.png" alt="img"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="popup__form-body popup-air" data-air="send__form">
+    <div class="popup__form">
+      <div class="popup__form-send">
+        <h3 class="form-send-title">Заявка отправлена</h3>
+        <p class="form-send-subtitle">Скоро свяжемся</p>
+      </div>
+    </div>
+  </div>
+
   </div>
 
   <script src="js/scripts.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </body>
 

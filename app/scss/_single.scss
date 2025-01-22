@@ -91,6 +91,105 @@
 .complecs__title-main {
   margin-bottom: 50px;
 }
+.range__wrapper {
+  border-radius: 20px;
+  background: radial-gradient(89.93% 216.99% at 19.37% 17.2%, rgba(232, 78, 14, 0.40) 0%, #121212 96%);
+  padding: 2px;
+  position: relative;
+  margin-bottom: 50px;
+}
+.range__title-wrapper {
+  display: none;
+}
+.range__content {
+  border-radius: 20px;
+  background: #121212;
+  padding: 50px;
+}
+.range__items {
+  display: flex;
+  align-items: center;
+
+}
+.range__item {
+  position: relative;
+  min-width: 300px;
+  margin-right: 50px;
+}
+.range__item-info {
+  label {
+    color: #878786;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 140%; /* 25.2px */
+  }
+  input {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    border: none;
+    background: transparent;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    width: 100%;
+  }
+}
+.ui-slider {
+  margin-top: 60px;
+}
+.ui-slider-horizontal {
+  height: 2px!important;
+  border-radius: 10px!important;
+  background: #292A2E!important;
+  border: none!important;
+}
+.ui-widget-header {
+  background: #EE9B79!important;
+}
+.ui-slider .ui-slider-handle {
+  width: 14px!important;
+  height: 14px!important;
+  border-radius: 100px!important;
+  background: $accent!important;
+  border: none!important;
+  cursor: grab!important;
+}
+.ui-state-hover:focus, .ui-widget-content .ui-state-hover:focus, .ui-widget-header .ui-state-hover:focus, .ui-state-focus:focus, .ui-widget-content .ui-state-focus:focus, .ui-widget-header .ui-state-focus:focus, .ui-button:hover, .ui-button:focus {
+  border: none!important;
+}
+.range__room-title {
+  color: #878786;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 140%;
+  margin-bottom: 28px;
+}
+.range__room-row {
+  display: flex;
+}
+.range__room-item {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: #292A2E;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 25.2px */
+  transition: all 0.5s ease;
+}
+.range__room-item.active {
+  background: $accent;
+  transition: all 0.5s ease;
+}
 .complecs__item {
   display: flex;
   justify-content: space-between;
@@ -436,6 +535,27 @@
     font-size: 11px;
     padding: 3px 11px;
   }
+  .range__content {
+    padding: 35px 30px;
+  }
+  .range__wrapper {
+    margin-bottom: 40px;
+  }
+  .range__items {
+    flex-wrap: wrap;
+  }
+  .range__item {
+    width: calc(50% - 15px);
+    min-width: 100px;
+    margin-right: 0;
+
+    &:first-child {
+      margin-right: 30px;
+    }
+  }
+  .range__room {
+    margin-top: 40px;
+  }
 }
 @media only screen and (max-width: 750px) {
   .single__title {
@@ -559,6 +679,75 @@
   }
   .complecs__btn {
     width: 100%;
+    justify-content: center;
+  }
+  .range__wrapper {
+    margin-bottom: 30px;
+  }
+  .range__content {
+    padding: 15px 18px;
+  }
+  .range__content.active .range__items{
+    max-height: 350px;
+    overflow: visible;
+    transition: all 0.5s ease;
+    padding: 30px 0 15px 0;
+  }
+  .range__content.active .range__title-svg {
+    svg {
+      transform: rotate(180deg);
+      transition: all 0.5s ease;
+      path {
+        fill: $accent;
+      }
+    }
+  }
+  .range__title-svg svg {
+    transition: all 0.5s ease;
+  }
+  .range__items {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    
+  }
+  .range__item {
+    width: 100%;
+    &:first-child {
+      margin: 0 0 40px 0;
+    }
+  }
+  .range__item-info label, .range__room-title {
+    font-size: 16px;
+  }
+  .ui-slider {
+    margin-top: 40px;
+  }
+  .range__item-info input {
+    top: 44%;
+  }
+  .range__room-title {
+    margin-bottom: 20px;
+  }
+  .range__title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .range__title {
+    color: rgba(255, 255, 255, 0.65);
+    font-family: "RF Dewi Expanded";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 140%; /* 22.4px */
+  }
+  .range__title-svg {
+    width: 12px;
+    height: 12px;
+    display: flex;
+    align-items: center;
     justify-content: center;
   }
 }
