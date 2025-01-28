@@ -23,6 +23,7 @@
   <!-- Custom Browsers Color End -->
 
   <link rel="stylesheet" href="css/main.min.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
@@ -172,6 +173,94 @@
               </div>
               <div class="range__items">
 
+                <div class="example">
+                  <div id="html5" class="noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
+                    <div class="noUi-base">
+                      <div class="noUi-connects">
+                        <div class="noUi-connect" style="transform: translate(23.3333%, 0px) scale(0.583333, 1);"></div>
+                      </div>
+                      <div class="noUi-origin" style="transform: translate(-76.6667%, 0px); z-index: 5;">
+                        <div class="noUi-handle noUi-handle-lower" data-handle="0" tabindex="0" role="slider"
+                          aria-orientation="horizontal" aria-valuemin="-20.0" aria-valuemax="29.0" aria-valuenow="-6.0"
+                          aria-valuetext="-6.00">
+                          <div class="noUi-touch-area"></div>
+                        </div>
+                      </div>
+                      <div class="noUi-origin" style="transform: translate(-18.3333%, 0px); z-index: 4;">
+                        <div class="noUi-handle noUi-handle-upper" data-handle="1" tabindex="0" role="slider"
+                          aria-orientation="horizontal" aria-valuemin="-6.0" aria-valuemax="40.0" aria-valuenow="29.0"
+                          aria-valuetext="29.00">
+                          <div class="noUi-touch-area"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <select id="input-select">
+                    <option value="-20">-20</option>
+                    <option value="-19">-19</option>
+                    <option value="-18">-18</option>
+                    <option value="-17">-17</option>
+                    <option value="-16">-16</option>
+                    <option value="-15">-15</option>
+                    <option value="-14">-14</option>
+                    <option value="-13">-13</option>
+                    <option value="-12">-12</option>
+                    <option value="-11">-11</option>
+                    <option value="-10">-10</option>
+                    <option value="-9">-9</option>
+                    <option value="-8">-8</option>
+                    <option value="-7">-7</option>
+                    <option value="-6">-6</option>
+                    <option value="-5">-5</option>
+                    <option value="-4">-4</option>
+                    <option value="-3">-3</option>
+                    <option value="-2">-2</option>
+                    <option value="-1">-1</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">38</option>
+                    <option value="39">39</option>
+                    <option value="40">40</option>
+                  </select>
+                  <input type="number" min="-20" max="40" step="1" id="input-number">
+                </div>
+
                 <div class="range__item">
                   <p class="range__item-info">
                     <label for="plosha">Площадь квартиры</label>
@@ -179,14 +268,14 @@
                   </p>
                   <div id="slider-range-plosha"></div>
                 </div>
-                <div class="range__item">
+                <!--<div class="range__item">
                   <p class="range__item-info">
                     <label for="amount">Стоимость жилья млн.</label>
                     <input type="text" id="amount" readonly>
                   </p>
                   <div id="slider-range-price"></div>
-                </div>
-                <div class="range__room">
+                </div>-->
+                <!--<div class="range__room">
                   <p class="range__room-title">Количество комнат</p>
                   <div class="range__room-row">
                     <p class="range__room-item">C</p>
@@ -196,7 +285,7 @@
                     <p class="range__room-item">4</p>
                     <p class="range__room-item">5+</p>
                   </div>
-                </div>
+                </div>-->
               </div>
             </div>
 
@@ -533,17 +622,39 @@
               <p>Заполните контактные данные.</p>
               <h3>Наши специалисты свяжутся с вами в ближайшее время</h3>
             </div>
-            <form action="#">
-              <div class="consult__form-item">
-                <input type="text" placeholder="Ваше имя">
+            <div class="consult__links">
+              <div class="callback__form-item">
+                <a href="#" class="form__item-tg">
+                  <div class="form__item-tg-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <g clip-path="url(#clip0_202_121)">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0C18.6274 0 24 5.37258 24 12ZM12.43 8.85887C11.2628 9.34434 8.93014 10.3491 5.43189 11.8733C4.86383 12.0992 4.56626 12.3202 4.53917 12.5362C4.49339 12.9014 4.95071 13.0452 5.57347 13.2411C5.65818 13.2677 5.74595 13.2953 5.83594 13.3245C6.44864 13.5237 7.27283 13.7567 7.70129 13.766C8.08994 13.7744 8.52373 13.6141 9.00264 13.2853C12.2712 11.0789 13.9584 9.96375 14.0643 9.93971C14.139 9.92275 14.2426 9.90142 14.3128 9.96379C14.3829 10.0261 14.376 10.1443 14.3686 10.1759C14.3233 10.3691 12.5281 12.038 11.5991 12.9017C11.3095 13.171 11.1041 13.362 11.0621 13.4056C10.968 13.5033 10.8721 13.5957 10.78 13.6845C10.2108 14.2333 9.78391 14.6448 10.8036 15.3167C11.2936 15.6396 11.6858 15.9067 12.0769 16.1731C12.5042 16.464 12.9303 16.7542 13.4816 17.1156C13.6221 17.2077 13.7562 17.3033 13.8869 17.3965C14.3841 17.7509 14.8307 18.0694 15.3826 18.0186C15.7032 17.9891 16.0345 17.6875 16.2027 16.7883C16.6002 14.6631 17.3816 10.0584 17.5622 8.16091C17.578 7.99467 17.5581 7.78191 17.5422 7.68851C17.5262 7.59512 17.4928 7.46205 17.3714 7.36354C17.2276 7.24688 17.0056 7.22227 16.9064 7.22402C16.455 7.23197 15.7626 7.47276 12.43 8.85887Z"
+                          fill="white" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_202_121">
+                          <rect width="24" height="24" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </div>
+                  <p>написать в телеграмм</p>
+                </a>
               </div>
-              <div class="consult__form-item">
-                <input type="tel" placeholder="Номер телефона">
+              <div class="callback__form-item sub">
+                <a href="#" class="form__item-wa">
+                  <div class="form__item-tg-svg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M3.50002 12C3.50002 7.30558 7.3056 3.5 12 3.5C16.6944 3.5 20.5 7.30558 20.5 12C20.5 16.6944 16.6944 20.5 12 20.5C10.3278 20.5 8.77127 20.0182 7.45798 19.1861C7.21357 19.0313 6.91408 18.9899 6.63684 19.0726L3.75769 19.9319L4.84173 17.3953C4.96986 17.0955 4.94379 16.7521 4.77187 16.4751C3.9657 15.176 3.50002 13.6439 3.50002 12ZM12 1.5C6.20103 1.5 1.50002 6.20101 1.50002 12C1.50002 13.8381 1.97316 15.5683 2.80465 17.0727L1.08047 21.107C0.928049 21.4637 0.995611 21.8763 1.25382 22.1657C1.51203 22.4552 1.91432 22.5692 2.28599 22.4582L6.78541 21.1155C8.32245 21.9965 10.1037 22.5 12 22.5C17.799 22.5 22.5 17.799 22.5 12C22.5 6.20101 17.799 1.5 12 1.5ZM14.2925 14.1824L12.9783 15.1081C12.3628 14.7575 11.6823 14.2681 10.9997 13.5855C10.2901 12.8759 9.76402 12.1433 9.37612 11.4713L10.2113 10.7624C10.5697 10.4582 10.6678 9.94533 10.447 9.53028L9.38284 7.53028C9.23954 7.26097 8.98116 7.0718 8.68115 7.01654C8.38113 6.96129 8.07231 7.046 7.84247 7.24659L7.52696 7.52195C6.76823 8.18414 6.3195 9.2723 6.69141 10.3741C7.07698 11.5163 7.89983 13.314 9.58552 14.9997C11.3991 16.8133 13.2413 17.5275 14.3186 17.8049C15.1866 18.0283 16.008 17.7288 16.5868 17.2572L17.1783 16.7752C17.4313 16.5691 17.5678 16.2524 17.544 15.9269C17.5201 15.6014 17.3389 15.308 17.0585 15.1409L15.3802 14.1409C15.0412 13.939 14.6152 13.9552 14.2925 14.1824Z"
+                        fill="white" />
+                    </svg>
+                  </div>
+                  <p>написать в Whatsapp</p>
+                </a>
               </div>
-              <div class="consult__form-item">
-                <input type="submit" value="Задать вопрос">
-              </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
@@ -712,6 +823,7 @@
   </div>
 
   <script src="js/scripts.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>

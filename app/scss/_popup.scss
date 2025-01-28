@@ -85,7 +85,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 140%; /* 28px */
-  margin: 25px 0 40px 0;
+  margin: 25px 0 60px 0;
 }
 .popup__form-img {
   position: absolute;
@@ -100,17 +100,61 @@
     height: 100%;
   }
 }
+.form__item-tg {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 25px 25px;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  max-height: 57px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  background: #2AABEE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 100%; /* 17px */
+  & svg {
+    path {
+      transition: all 0.5s ease;
+    }
+  }
+}
+.form__item-wa {
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+  padding: 25px 25px;
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.5s ease;
+  max-height: 57px;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  background: #2AEE82;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 100%; /* 17px */
+  & svg {
+    path {
+      transition: all 0.5s ease;
+    }
+  }
+}
+.form__item-tg-svg {
+  margin-right: 15px;
+}
 .callback__form-item {
 	margin: 0 0 25px 0;
 	position: relative;
   display: flex;
   flex-direction: column;
-  width: 335px;
-  &-politics {
-    font-size: 14px;
-    color: rgba(46, 46, 46, 0.41);
-    margin: -3px 0 0 15px;
-  }
+  width: 327px;
 	& input, textarea {
 		font-family: 'Montserrat', sans-serif;
 		width: 100%;
@@ -243,10 +287,13 @@
   .callback__form-item input[type=submit] {
     font-size: 14px;
   }
-  .callback__form-item.sub {
-    margin-top: 20px;
-  }
   .popup__form-img {
     display: none;
+  }
+  .form__item-tg, .form__item-wa {
+    padding: 8px 25px;
+    p {
+      font-size: 14px;
+    }
   }
 }

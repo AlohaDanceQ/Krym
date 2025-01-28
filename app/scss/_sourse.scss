@@ -387,4 +387,28 @@ ul {
     transform: translateY(0);
     transition: all 0.5s ease;
   }
+  .form__item-tg:hover {
+    transition: all 0.5s ease;
+    background: transparent;
+    border: 1px solid #2AABEE;
+    color: #121212;
+  }
+  .form__item-tg:hover svg {
+    path {
+      fill: #2AABEE;
+      transition: all 0.5s ease;
+    }
+  }
+  .form__item-wa:hover {
+    transition: all 0.5s ease;
+    background: transparent;
+    border: 1px solid #2AEE82;
+    color: #121212;
+  }
+  .form__item-wa:hover svg {
+    path {
+      fill: #2AEE82;
+      transition: all 0.5s ease;
+    }
+  }
 }

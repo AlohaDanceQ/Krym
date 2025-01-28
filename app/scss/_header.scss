@@ -45,6 +45,7 @@
 .header__other-wrapper {
   display: flex;
   align-items: center;
+  width: 160px;
 }
 .header__phone {
   font-size: 14px;
@@ -73,7 +74,29 @@
   display: none;
 }
 
+.header__nav-list .current-menu-item {
+  position: relative;
+}
+
+.header__nav-list .current-menu-item::before {
+  content: '';
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: $accent;
+  transition: all 0.5s ease;
+}
+
+.header.header-bg .header__nav-list .current-menu-item::before {
+  top: -25px;
+}
+
 @media only screen and (max-width: 1130px) {
+  .header__nav-list .current-menu-item::before {
+    width: 0;
+  }
   .header__nav, .header__btn, .header__phone {
     display: none;
   }
@@ -195,6 +218,18 @@
   .header {
     padding: 13px 0 0 0;
   }
+  .header__other-wrapper {
+    width: auto;
+  }
+  .header__mobile-links {
+    margin-bottom: 30px;
+  }
+  .header__mobile-links .form__item-wa, .header__mobile-links .form__item-tg {
+    max-height: 49px;
+  }
+  .header__mobile-links .callback__form-item {
+    margin-bottom: 20px;
+  }
 }
 @media only screen and (max-width: 750px) {
   .header {
@@ -204,6 +239,9 @@
     width: 350px;
   }
   .header__mobile .header__btn {
+    width: 100%;
+  }
+  .header__mobile-links {
     width: 100%;
   }
 }
