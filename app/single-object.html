@@ -412,6 +412,30 @@
           </div>
         </div>
       </section>
+      <section class="map sec__small">
+        <div class="map__content">
+          <div class="container">
+            <div class="border">Карта</div>
+            <h3 class="map__title title">РАСПОЛАЖЕНИЕ И ИНФРАСТРУКТУРА</h3>
+            <div class="map__btns-rel">
+              <div class="map__btn active">Расположение</div>
+              <div class="map__btn">Инфраструктура</div>
+            </div>
+          </div>
+
+          <div class="map__app">
+            <div class="map__wrapper">
+              <div class="map__container">
+                <div class="map__box" id="map-test"></div>
+                <div class="map__btns">
+                  <div class="map__btn active">Расположение</div>
+                  <div class="map__btn">Инфраструктура</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section class="novo sec__small">
         <div class="novo__content container">
           <div class="border">ДОСТОПРИМЕЧАТЕЛЬНОСТИ</div>
@@ -572,6 +596,104 @@
 
     </main>
 
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cc277644-d46e-426e-b4a3-fd01fb3a0303&lang=ru_RU"></script>
+    <script>
+
+
+
+      //function init() {
+      //  let map = new ymaps.Map('map-test', {
+      //    center: [59.92975319089752, 30.28962423576219],
+      //    zoom: 16
+      //  });
+
+      //  map.controls.remove('searchControl');
+      //  map.controls.remove('geolocationControl');
+      //  map.controls.remove('fullscreenControl');
+      //  map.controls.remove('zoomControl');
+      //  map.controls.remove('rulerControl');
+
+      //}
+
+
+
+      //ymaps.ready(init);
+
+
+      ymaps.ready(function () {
+        var myMap = new ymaps.Map('map-test', {
+          center: [55.76, 37.64],
+          zoom: 16,
+          controls: ['zoomControl']
+        }, {
+          searchControlProvider: 'yandex#search'
+        });
+
+        //var placemark = new ymaps.Placemark([55.76, 37.64], {}, {
+        //  iconLayout: 'default#image',
+        //  iconImageHref: '../img/jk-img-1.jpg',
+        //  iconImageSize: [87, 87],
+        //  iconImageOffset: [0, 0],
+        //}
+        //);
+
+
+
+        // Создание метки с квадратной активной областью.
+        var squareLayout = ymaps.templateLayoutFactory.createClass('<div class="square_layout"><img src="../img/jk-img-1.jpg" alt="pin"></div>');
+
+        var squarePlacemark = new ymaps.Placemark(
+          [55.76, 37.64], {
+          hintContent: 'ЖК Премиум Класса'
+        }, {
+          iconLayout: squareLayout,
+          // Описываем фигуру активной области "Прямоугольник".
+          iconShape: {
+            type: 'Rectangle',
+            // Прямоугольник описывается в виде двух точек - верхней левой и нижней правой.
+            coordinates: [
+              [-87, -87], [87, 87]
+            ]
+          }
+        }
+        );
+        myMap.geoObjects.add(squarePlacemark);
+
+        // Создаем собственный стиль карты
+        var customStyle = [
+          {
+            selector: 'landscape',
+            style: {
+              fillColor: '#000' // Изменяем цвет ландшафта
+            }
+          },
+          {
+            selector: 'water',
+            style: {
+              fillColor: '#000' // Изменяем цвет воды
+            }
+          },
+          {
+            selector: 'road',
+            style: {
+              strokeColor: '#fff' // Изменяем цвет дорог
+            }
+          }
+        ];
+
+        // Применяем созданный стиль к карте
+        myMap.options.set('style', customStyle);
+
+        myMap.geoObjects.add(placemark);
+
+      });
+
+
+
+
+    </script>
+
     <footer class="footer">
       <div class="footer__content container">
         <div class="footer__up">
@@ -675,8 +797,17 @@
 
   </div>
 
+
+
+
+
+
   <script src="js/scripts.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+
+
 
 </body>
 

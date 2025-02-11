@@ -45,6 +45,7 @@
 .header__other-wrapper {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   width: 160px;
 }
 .header__phone {
@@ -76,6 +77,10 @@
 
 .header__nav-list .current-menu-item {
   position: relative;
+}
+
+.header__nav-list .current-menu-item a {
+  color: #fff;
 }
 
 .header__nav-list .current-menu-item::before {

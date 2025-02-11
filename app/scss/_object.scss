@@ -175,11 +175,89 @@
     object-fit: cover;
   }
 }
+.map__app {
+  max-width: 1340px;
+  margin: 0 auto;
+}
+.map__title {
+  margin: 20px 0 60px 0;
+}
+.map__wrapper {
+  border-radius: 20px;
+  background: radial-gradient(89.93% 216.99% at 19.37% 17.2%, rgba(232, 78, 14, 0.40) 0%, #121212 96%);
+  padding: 2px;
+}
+.map__container {
+  height: 688px;
+  position: relative;
+}
+.map__btns {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 17px;
+  top: 17px;
+}
+.map__btns-rel {
+  display: none;
+}
+.map__btn {
+  width: 181px;
+  height: 47px;
+  border-radius: 100px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  background: #272727;
+  color: rgba(255, 255, 255, 0.70);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  &:last-child {
+    margin: 0 0 0 15px;
+  }
+}
+.map__btn.active {
+  background: #fff;
+  color: #000;
+}
+.map__box {
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+[class*="copyrights-pane"] {
+  display: none!important;
+}
+[class*="ground-pane"] {
+  filter: invert(85%);
+}
+
+/* Квадратный макет метки */
+.square_layout {
+  width: 87px;
+  height: 87px;
+  border: 4px solid #E84E0E;
+  border-radius: 100px;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+}
 .dost__title {
   margin: 25px 0 60px 0;
 }
 .dost__item-wrapper {
-  min-height: 91px;
+  min-height: 82px;
 }
 .dost__item-city {
   color: #FFF;
@@ -187,6 +265,11 @@
   font-size: 25px;
   font-weight: 400;
   text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 80px;
 }
 .dost__item-pred {
   display: flex;
@@ -412,6 +495,12 @@
   .object__wrapper {
     max-width: 1200px;
   }
+  .map__box, .map__wrapper {
+    border-radius: 0;
+  }
+  .map__wrapper {
+    padding: 2px 0;
+  }
 }
 @media only screen and (max-width: 1230px) {
   .object__wrapper {
@@ -536,12 +625,33 @@
   .dost__title {
     margin: 20px 0 40px 0;
   }
+  .map__title {
+    margin: 15px 0 40px 0;
+  }
 }
 
 @media only screen and (max-width: 750px) {
   .object__wrapper {
     max-width: 350px;
     width: 350px;
+  }
+  .map__title {
+    margin: 15px 0 45px 0;
+  }
+  .map__container {
+    height: 519px;
+  }
+  .map__btns {
+    display: none;
+  }
+  .map__btns-rel {
+    display: flex;
+    margin-bottom: 25px;
+  }
+  .map__btn {
+    font-size: 12px;
+    width: 168px;
+    height: 42px;
   }
   .object__head {
     padding: 76px 0 45px 0;
